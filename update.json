@@ -1,1 +1,11 @@
-
+{
+  "version": "1.1.0",
+  "name": "Update: Função de Edição",
+  "notes": [
+    "Adicionada a rota /calendar-update para editar registros existentes.",
+    "Correções menores na leitura de arquivos JSON vazios.",
+    "Melhoria na estabilidade do servidor http."
+  ],
+  "date": "2026-03-13",
+  "downloadUrl": "https://raw.githubusercontent.com/SEU_USUARIO/SEU_REPOSITORIO/main/server.js"
+}
