@@ -305,7 +305,6 @@ h1{ font-family:GintoBold, sans-serif; font-size:60px; line-height:1; margin-bot
 .calculando { opacity: 0.5; animation: pulse 1.5s infinite; }
 @keyframes pulse { 0% { opacity: 0.3; transform: scale(0.98); } 50% { opacity: 0.7; transform: scale(1.02); } 100% { opacity: 0.3; transform: scale(0.98); } }
 
-/* CSS do Check-in modificado com gradiente e mais pra baixo */
 .checkinWrap{ 
   position:fixed; 
   left:0; 
@@ -686,6 +685,29 @@ h1{ font-family:GintoBold, sans-serif; font-size:60px; line-height:1; margin-bot
   padding:0;
 }
 
+.updateBtn{
+  width:100%;
+  height:50px;
+  border:none;
+  border-radius:20px;
+  font-family:GintoBold, sans-serif;
+  font-size:16px;
+  cursor:pointer;
+  background:var(--blue);
+  color:var(--blue-dark);
+  margin:18px 0;
+  transition: transform .4s var(--elastic), box-shadow .3s var(--ease);
+}
+
+.updateBtn:hover{
+  transform: translateY(-2px);
+  box-shadow:0 10px 24px var(--blue-alpha-40);
+}
+
+.updateBtn:active{
+  transform: scale(.94);
+}
+
 .switchWrap { display:flex; justify-content:space-between; align-items:center; margin-bottom:16px; font-size:15px; }
 .switch { position:relative; display:inline-block; width:44px; height:24px; }
 .switch input { opacity:0; width:0; height:0; }
@@ -848,7 +870,7 @@ h1{ font-family:GintoBold, sans-serif; font-size:60px; line-height:1; margin-bot
       <label class="switch"><input type="checkbox" id="toggleResetTotal"><span class="sliderSwitch"></span></label>
   </div>
 
-  <button class="btn btnPrimary" id="updateSiteBtn" type="button" style="width:100%; margin-bottom:14px;">Atualizar site</button>
+  <button class="updateBtn" id="updateSiteBtn" type="button">Atualizar site</button>
 
   <div class="modalActions">
     <button class="btn btnGhost" id="settingsCancelBtn" type="button">Cancelar</button>
